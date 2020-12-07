@@ -9,6 +9,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\images\squat.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
   </ItemGroup>
 
