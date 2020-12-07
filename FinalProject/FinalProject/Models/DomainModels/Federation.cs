@@ -7,6 +7,7 @@ namespace FinalProject.Models
 {
     public class Federation
     {
+        public int FederationID { get; set; }
         public string Name { get; set; }
         public string WeighIn { get; set; }
         public string Tested { get; set; }
