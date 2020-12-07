@@ -23,9 +23,33 @@ namespace FinalProject.Models.DataLayer
                 {
                     FederationID = 1,
                     Name = "USAPL",
-                    WeighIn = "24 Hours",
+                    WeighIn = "2 Hours",
                     Tested = "Drug tested",
                     Cost = 45
+                },
+                new Federation
+                {
+                    FederationID = 2,
+                    Name = "USPA",
+                    WeighIn = "24 hours",
+                    Tested = "Not drug tested",
+                    Cost = 30
+                },
+                new Federation
+                {
+                    FederationID = 3,
+                    Name = "APF",
+                    WeighIn = "24 Hours",
+                    Tested = "Tested and untested divisions",
+                    Cost = 30
+                },
+                new Federation
+                {
+                    FederationID = 4,
+                    Name = "RPS",
+                    WeighIn = "24 hours",
+                    Tested = "Not drug tested",
+                    Cost = 0
                 });
             base.OnModelCreating(modelBuilder);
         }
