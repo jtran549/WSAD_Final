@@ -1,7 +1,40 @@
-﻿
+﻿@model IEnumerable<Federation>
 @{
     ViewData["Title"] = "Federations";
 }
 
 <h1>Federations</h1>
+<table>
+    <tr>
+        <th>Federation Name</th>
+        <th>Weigh in protocol</th>
+        <th>Drug testing</th>
+        <th>Membership fee</th>
+    </tr>
+    @foreach(Federation federation in Model)
+    {
+        <tr>
+            <td>@federation.Name</td>
+            <td>@federation.WeighIn</td>
+            <td>@federation.Tested</td>
+            <td>@federation.Cost</td>
+        </tr>
+    }
+</table>
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
 
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>

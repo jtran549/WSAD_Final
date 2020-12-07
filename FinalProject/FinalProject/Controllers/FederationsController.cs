@@ -15,7 +15,8 @@ namespace FinalProject.Controllers
         public FederationsController(FederationContext ctx) => federations = new Repository<Federation>(ctx);
         public IActionResult Index()
         {
-            return View();
+            var options = new QueryOptions<Federation>();
+            return View(federations.List(options));
         }
     }
 }
